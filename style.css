@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card-listing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "tic-tac-toe tic-tac-toe checkers"
+        "chess go operation"
+        "monopoly monopoly monopoly";
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.card {
+    background-color: #fffacd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #d80000;
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0;
+}
+
+.card:nth-child(1) {
+    grid-area: tic-tac-toe;
+}
+
+.card:nth-child(2) {
+    grid-area: checkers;
+}
+
+.card:nth-child(3) {
+    grid-area: chess;
+}
+
+.card:nth-child(4) {
+    grid-area: go;
+}
+
+.card:nth-child(5) {
+    grid-area: operation;
+}
+
+.card:nth-child(6) {
+    grid-column: 1;
+}
+
